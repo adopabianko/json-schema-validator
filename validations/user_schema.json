@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/user.schema.json",
+    "title": "User",
+    "description": "Validation for user",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "Name of user",
+        "type": "string",
+        "minLength": 3
+      },
+      "email": {
+        "description": "Email of user",
+        "type": "string",
+        "format": "email",
+        "minLength": 6
+      }
+    },
+    "required": [ "name", "email" ]
+  }
